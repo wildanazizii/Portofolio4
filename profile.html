@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CreativeVision Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CreativeVision</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="images/profile.JPG" alt="Wildan Azizi Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h1>Wildan Azizi</h1>
+                    <p class="profile-title">Creative Designer & Developer</p>
+                    <div class="profile-social">
+                        <a href="https://www.instagram.com/wils_azz1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/wildanazizi" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-section-block">
+                    <h2>About Me</h2>
+                    <p>A passionate designer and developer with a keen eye for detail and a drive for creating beautiful, functional designs. I specialize in brand identity, web design, and user interface development.</p>
+                </div>
+
+                <div class="profile-section-block">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <h3>Design</h3>
+                            <ul>
+                                <li>UI/UX Design</li>
+                                <li>Brand Identity</li>
+                                <li>Logo Design</li>
+                                <li>Print Design</li>
+                            </ul>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Development</h3>
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>Responsive Design</li>
+                                <li>Web Animation</li>
+                            </ul>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Adobe Creative Suite</li>
+                                <li>Figma</li>
+                                <li>VS Code</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section-block">
+                    <h2>Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Pendidikan Teknik Informatika</h3>
+                                <p>Universitas Sebelas Maret</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>Dart Programming Certification</h3>
+                                <p>Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="orders-section">
+        <div class="profile-container">
+            <div class="profile-section-block">
+                <h2>Project Orders</h2>
+                <div class="orders-list">
+                    <div class="orders-header">
+                        <div class="order-col">ID</div>
+                        <div class="order-col">Name</div>
+                        <div class="order-col">Email</div>
+                        <div class="order-col">Project Type</div>
+                        <div class="order-col">Message</div>
+                        <div class="order-col">Status</div>
+                        <div class="order-col">Date</div>
+                        <div class="order-col">Actions</div>
+                    </div>
+                    <div id="ordersList">
+                        <!-- Orders will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/orders.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CreativeVision Studio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/wils_azz1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/wildanazizi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Debug script
+        console.log('Profile page loaded');
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM fully loaded');
+            const ordersList = document.getElementById('ordersList');
+            console.log('Orders list element:', ordersList);
+        });
+    </script>
+</body>
+</html>
